@@ -46,3 +46,42 @@ let morseAlphabet = [
   { letter: ")", morseCode: "-.--.-" },
   { letter: " ", morseCode: "    " },
 ];
+
+console.log("test");
+
+//1.-Save Variables data-js="text" data-js="submit-btn" data-js="output"
+
+const text = document.querySelector('[data-js="text"]');
+// const btn = document.querySelector('[data-js="submit-btn"]');
+const output = document.querySelector('[data-js="output"]');
+
+const encriptText = () => {
+  //2.-Save Values
+  let textValue = text.value.toLowerCase();
+
+  //3.Create work Variables
+
+  let morseText = [];
+  let newMorseLetter;
+
+  //4.Create Array form text
+  let textArray = Array.from(textValue);
+
+  // 5.Map the text array to find in the morseAlphabet Array
+  // the object with the same character.
+  // For the same i also is the value of
+  // newMorseLetter themorseAlphabet[i].morseCode
+
+  morseText = textArray.map((character) => {
+    for (let i = 0; i < morseAlphabet.length; i++) {
+      if (character === morseAlphabet[i].letter) {
+        newMorseLetter = morseAlphabet[i].morseCode;
+      }
+    }
+    return newMorseLetter;
+  });
+
+  // 6. Put together as String for the output
+  let morseString = morseText.reduce((a, b) => a + b);
+  output.innerHTML = morseString;
+};
