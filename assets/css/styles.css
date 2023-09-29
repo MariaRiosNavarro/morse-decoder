@@ -24,7 +24,7 @@ main {
 input:first-of-type,
 .output-wrapper {
   width: 50%;
-  height: 2rem;
+  height: 3rem;
   border-radius: 3px;
   border: none;
   background-color: whitesmoke;
@@ -38,4 +38,9 @@ input[type="submit"] {
   border: none;
   color: beige;
   border-radius: 3px;
+}
+
+p {
+  font-weight: 700;
+  font-size: 2rem;
 }

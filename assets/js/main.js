@@ -82,6 +82,6 @@ const encriptText = () => {
   });
 
   // 6. Put together as String for the output
-  let morseString = morseText.reduce((a, b) => a + b);
+  let morseString = morseText.join(" ");
   output.innerHTML = morseString;
 };
