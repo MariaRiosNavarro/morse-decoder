@@ -4,5 +4,7 @@
 
 TEST = - . ... -
 
-![](/assets/img/readme1.png)
-![](/assets/img/readme2.png)
+  <div>
+    <img src="./assets/img/readme1.png" alt="readme pic" width="400px">
+    <img src="./assets/img/readme2.png" alt="readme pic" width="400px">
+  </div>
