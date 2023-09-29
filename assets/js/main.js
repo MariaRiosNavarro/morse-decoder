@@ -44,15 +44,12 @@ let morseAlphabet = [
   { letter: "@", morseCode: ".--.-." },
   { letter: "(", morseCode: "-.--." },
   { letter: ")", morseCode: "-.--.-" },
-  { letter: " ", morseCode: "    " },
+  { letter: " ", morseCode: "/" },
 ];
-
-console.log("test");
 
 //1.-Save Variables data-js="text" data-js="submit-btn" data-js="output"
 
 const text = document.querySelector('[data-js="text"]');
-// const btn = document.querySelector('[data-js="submit-btn"]');
 const output = document.querySelector('[data-js="output"]');
 
 const encriptText = () => {
@@ -82,6 +79,12 @@ const encriptText = () => {
   });
 
   // 6. Put together as String for the output
+
+  console.log("here", morseText);
   let morseString = morseText.join(" ");
+  console.log(morseString);
+
   output.innerHTML = morseString;
 };
+
+text.addEventListener("input", encriptText);
