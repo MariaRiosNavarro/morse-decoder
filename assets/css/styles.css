@@ -11,6 +11,11 @@ html {
   font-family: helvetica, Arial, sans-serif;
 }
 
+h1,
+h3 {
+  font-size: 2rem;
+}
+
 main {
   display: flex;
   align-items: center;
@@ -19,6 +24,7 @@ main {
   background-color: lightseagreen;
   height: 100vh;
   gap: 2rem;
+  position: relative;
 }
 
 input:first-of-type,
@@ -29,6 +35,11 @@ input:first-of-type,
   border: none;
   background-color: whitesmoke;
   padding: 0.8rem 1rem;
+}
+
+.output-wrapper {
+  min-height: 3rem;
+  height: auto;
 }
 
 input[type="submit"] {
@@ -43,4 +54,14 @@ input[type="submit"] {
 p {
   font-weight: 700;
   font-size: 2rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0rem;
+}
+
+a {
+  text-decoration: none;
+  color: lightgreen;
 }
