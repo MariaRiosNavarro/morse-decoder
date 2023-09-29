@@ -44,7 +44,7 @@ let morseAlphabet = [
   { letter: "@", morseCode: ".--.-." },
   { letter: "(", morseCode: "-.--." },
   { letter: ")", morseCode: "-.--.-" },
-  { letter: " ", morseCode: "    " },
+  { letter: " ", morseCode: "/" },
 ];
 
 console.log("test");
